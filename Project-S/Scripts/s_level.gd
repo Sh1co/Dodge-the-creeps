@@ -33,7 +33,8 @@ func player_died():
 func change_player_health(change):
 	print("Player health changed by " + str(change))
 	player.change_health(change)
-	healthbar.health_changed(player.health)
+	if healthbar != null:
+		healthbar.health_chwaanged(player.health)
 
 
 func _on_Button_pressed():

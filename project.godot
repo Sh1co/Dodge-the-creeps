@@ -29,7 +29,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Project-S/Scripts/s_healthbar.gd"
 }, {
-"base": "Reference",
+"base": "Node2D",
 "class": "SLevel",
 "language": "GDScript",
 "path": "res://Project-S/Scripts/s_level.gd"
@@ -51,7 +51,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Dodge the creeps PS"
-run/main_scene="res://Project-S/Scenes/SGame.tscn"
+run/main_scene="res://Game.tscn"
 config/icon="res://icon.png"
 
 [display]
