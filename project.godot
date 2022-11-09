@@ -1,0 +1,95 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "SEnemy",
+"language": "GDScript",
+"path": "res://Project-S/Scripts/s_enemy.gd"
+}, {
+"base": "Node2D",
+"class": "SEnemySpawner",
+"language": "GDScript",
+"path": "res://Project-S/Scripts/s_enemy_spawner.gd"
+}, {
+"base": "Reference",
+"class": "SGame",
+"language": "GDScript",
+"path": "res://Project-S/Scripts/s_game.gd"
+}, {
+"base": "Reference",
+"class": "SHealthBar",
+"language": "GDScript",
+"path": "res://Project-S/Scripts/s_healthbar.gd"
+}, {
+"base": "Reference",
+"class": "SLevel",
+"language": "GDScript",
+"path": "res://Project-S/Scripts/s_level.gd"
+}, {
+"base": "Reference",
+"class": "SPlayer",
+"language": "GDScript",
+"path": "res://Project-S/Scripts/s_player.gd"
+} ]
+_global_script_class_icons={
+"SEnemy": "",
+"SEnemySpawner": "",
+"SGame": "",
+"SHealthBar": "",
+"SLevel": "",
+"SPlayer": ""
+}
+
+[application]
+
+config/name="Dodge the creeps PS"
+run/main_scene="res://Project-S/Scenes/SGame.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=480
+window/size/height=720
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+move_up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
