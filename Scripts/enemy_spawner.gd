@@ -1,5 +1,6 @@
 extends SEnemySpawner
 
+
 func _ready():
 	$MobTimer.start()
 
