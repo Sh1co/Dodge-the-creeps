@@ -3,7 +3,6 @@ extends SEnemy
 export var movement_speed = 100
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	$Sprite.playing = true
 
