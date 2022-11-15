@@ -39,7 +39,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Project-S/Scripts/s_main_menu.gd"
 }, {
-"base": "Reference",
+"base": "RigidBody2D",
 "class": "SPlayer",
 "language": "GDScript",
 "path": "res://Project-S/Scripts/s_player.gd"
